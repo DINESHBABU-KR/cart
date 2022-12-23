@@ -1,9 +1,12 @@
 const mongoose = require('mongoose');
 
 mongoose.set('strictQuery', false);
+
 const connectDatabase = () => {
+  const db =
+    'mongodb+srv://dineshbabuKR:dinadb1511%40@backend.qehfmd1.mongodb.net/?retryWrites=true&w=majority';
   mongoose
-    .connect(process.env.DB_LO, {
+    .connect(db, {
       useNewUrlParser: true,
 
       useUnifiedTopology: true,
