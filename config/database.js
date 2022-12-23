@@ -8,8 +8,8 @@ const connectDatabase = () => {
 
       useUnifiedTopology: true,
     })
-    .then(() => {
-      console.log('success');
+    .then((con) => {
+      console.log('success the host is' + con.connnection.host);
     })
     .catch((err) => {
       console.log(err);
